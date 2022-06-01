@@ -1,0 +1,198 @@
+.container{
+    background-color: yellow;
+}
+
+.content{
+    background-color: blue;
+    display: grid;
+    grid-template-areas: "title-empty title-items"
+    "filter-left items-box";
+    grid-template-columns: 1fr 4fr;
+}
+
+.title-empty{
+    grid-area: title-empty;
+}
+
+.title-items{
+    grid-area: title-items;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.items-box{
+    grid-area: items-box;
+}
+
+.filter-left{
+    grid-area: filter-left;
+}
+
+
+.items-container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(170px,1fr));
+    gap: 10px;
+    padding: 0 10px;
+    justify-items: center;
+}
+
+/* .items-box .items-box-title{
+    text-align: center;
+    margin-bottom: 28px;
+} */
+
+/* Box Item Bigger (box-bigger) */
+.box-bigger-img{
+    position: relative;
+    height: 350px;
+    /* width: 170px; */
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box-bigger-img .badge-left{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    color: #fff;
+    padding: 5px;
+    background-color: rgb(251, 182, 182) ;
+    border-radius: 10px;
+    font-size: 0.7em;
+}
+
+.box-bigger-img .love-right{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.box-bigger-img .love-right span{
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.box-bigger-img .love-right span:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.box-bigger-pricebox{
+    border-top: 1px solid #666;
+    width: 170px;
+}
+
+.box-bigger-pricebox .original-price{
+    margin-bottom: 8px;
+}
+
+.box-bigger-titlebox h5{
+    font-weight: 100;
+}
+
+.box-bigger-titlebox a{
+    color: black;
+}
+
+.box-bigger-titlebox h4{
+    color: rgb(255, 101, 101);
+}
+
+.box-bigger-titlebox a:hover{
+    text-decoration: underline;
+}
+
+.box-bigger-titlebox{
+    width: 170px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.box-item-bigger a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Responsive Breakpoints */
+
+/* Shrink window */
+@media screen and (max-width:1024px) {
+    
+}
+
+/* Tablet */
+@media screen and (max-width:768px) {
+    /* .content{
+
+    } */
+
+    .box-bigger-img{
+        height: 300px;
+    }
+    
+}
+
+/* Mobile */
+@media screen and (max-width:600px) {
+
+    nav{
+        border-bottom: 1px solid #ddd;
+    }
+
+    .filter-left, .title-empty{
+        display: none;
+    }
+
+    .content{
+        grid-template-areas: 'title-items' 'items-box';
+        grid-template-columns: 1fr;
+    }
+
+    .box-bigger-img{
+        height: 250px;
+    }
+
+    .filter-right{
+        z-index: 100;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: blue;
+        height: 100vh;
+        width: 50%;
+        display: block;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        overflow-y: auto;
+        text-align: right;
+    }
+
+    .filter-right .slide{
+        transform: translateX(0);
+        opacity: 1;
+        position: fixed;
+    }
+
+    .filter-button-container{
+        position: fixed;
+        bottom:0;
+        height: 7%;
+        left: 0;
+        right: 0;
+        background-color: aqua;
+        display: flex;
+    }
+
+    .filter-button-container button{
+        width: 100%;
+        border: 0;
+        color: #666;
+    }
+
+}
