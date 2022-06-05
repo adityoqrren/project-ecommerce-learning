@@ -186,445 +186,882 @@
     </nav>
 
     <div class="container">
+        
+        <div class="filter-right">
+            <div class="filter-title"><h4>FILTER</h4><span class="material-icons filter-close">
+                close
+            </span></div>
+            <div class="filter-kinds">
+                <div class="filter-name"><h5>KINDS</h5><h5 class="btn-expand-collapse" id="btn-expand-default">+</h5></div>
+                <ul class="filter-kinds-box filter-hide">
+                    <li class="selected"><a href="#">Basic Tee</a></li>
+                    <li><a href="#">Cuban Shirt</a></li>
+                    <li><a href="#">Flannel Shirt</a></li>
+                    <li><a href="#">Jamal Koko Shirt</a></li>
+                    <li><a href="#">Oxford</a></li>
+                </ul>
+            </div>
+            <div class="filter-size">
+                <div class="filter-name"><h5>SIZE</h5><h5 class="btn-expand-collapse">+</h5></div>
+                <ul class="filter-flex filter-hide">
+                    <li class="filter-flex-item selected"><a href="#">S</a></li>
+                    <li class="filter-flex-item"><a href="#">M</a></li>
+                    <li class="filter-flex-item"><a href="#">L</a></li>
+                    <li class="filter-flex-item"><a href="#">XL</a></li>
+                    <li class="filter-flex-item"><a href="#">XXL</a></li>
+                    <li class="filter-flex-item"><a href="#">40</a></li>
+                    <li class="filter-flex-item not-available"><a href="#">41</a></li>
+                    <li class="filter-flex-item"><a href="#">42</a></li>
+                    <li class="filter-flex-item"><a href="#">43</a></li>
+                    <li class="filter-flex-item"><a href="#">44</a></li>
+                </ul>
+            </div>
+            <div class="filter-color">
+                <div class="filter-name"><h5>COLOR</h5><h5 class="btn-expand-collapse">+</h5></div>
+                <ul class="filter-flex filter-kinds-hide filter-hide">
+                    <li class="filter-flex-item"><a class="c1" href=""><span class="color-palette"></span></a></li>
+                    <li class="filter-flex-item selected"><a class="c2" href=""><span class="color-palette"></span></a></li>
+                    <li class="filter-flex-item"><a class="c3" href=""><span class="color-palette"></span></a></li>
+                    <li class="filter-flex-item"><a class="c4" href=""><span class="color-palette"></span></a></li>
+                    <li class="filter-flex-item"><a class="c5" href=""><span class="color-palette"></span></a></li>
+                    <li class="filter-flex-item"><a class="c6" href=""><span class="color-palette"></span></a></li>
+                    <li class="filter-flex-item"><a class="c7" href=""><span class="color-palette"></span></a></li>
+                    <li class="filter-flex-item"><a class="c8" href=""><span class="color-palette"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="content">
-            <div class="title-empty"></div>
-            <div class="filter-left">
-                <div class="filter-title"><h4>FILTER</h4></div>
-                <div class="filter-kinds">
-                    <h4 class="filter-name">KINDS</h4>
-                    <ul class="filter-kinds-box">
-                        <li class="selected"><a href="#">Basic Tee</a></li>
-                        <li><a href="#">Cuban Shirt</a></li>
-                        <li><a href="#">Flannel Shirt</a></li>
-                        <li><a href="#">Jamal Koko Shirt</a></li>
-                        <li><a href="#">Oxford</a></li>
-                    </ul>
-                </div>
-                <div class="filter-size">
-                    <h4 class="filter-name">SIZE</h4>
-                    <ul class="filter-flex">
-                        <li class="filter-flex-item selected"><a href="#">S</a></li>
-                        <li class="filter-flex-item"><a href="#">M</a></li>
-                        <li class="filter-flex-item"><a href="#">L</a></li>
-                        <li class="filter-flex-item"><a href="#">XL</a></li>
-                        <li class="filter-flex-item"><a href="#">XXL</a></li>
-                        <li class="filter-flex-item"><a href="#">40</a></li>
-                        <li class="filter-flex-item not-available"><a href="#">41</a></li>
-                        <li class="filter-flex-item"><a href="#">42</a></li>
-                        <li class="filter-flex-item"><a href="#">43</a></li>
-                        <li class="filter-flex-item"><a href="#">44</a></li>
-                    </ul>
-                </div>
-                <div class="filter-color">
-                    <h4 class="filter-name">COLOR</h4>
-                    <ul class="filter-flex">
-                        <li class="filter-flex-item"><a class="c1" href=""><span class="color-palette"></span></a></li>
-                        <li class="filter-flex-item selected"><a class="c2" href=""><span class="color-palette"></span></a></li>
-                        <li class="filter-flex-item"><a class="c3" href=""><span class="color-palette"></span></a></li>
-                        <li class="filter-flex-item"><a class="c4" href=""><span class="color-palette"></span></a></li>
-                        <li class="filter-flex-item"><a class="c5" href=""><span class="color-palette"></span></a></li>
-                        <li class="filter-flex-item"><a class="c6" href=""><span class="color-palette"></span></a></li>
-                        <li class="filter-flex-item"><a class="c7" href=""><span class="color-palette"></span></a></li>
-                        <li class="filter-flex-item"><a class="c8" href=""><span class="color-palette"></span></a></li>
-                    </ul>
+            <div class="content-top">
+                <div class="title-empty"></div>
+                <div class="title-items">
+                    <h3>Tops</h3>
                 </div>
             </div>
-
-            <div class="title-items">
-                <h3>Tops</h3>
-            </div>
-
-            <div class="items-box">
-              
-                <div class="items-container" id="">
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="content-bottom">
+                <div class="filter-left">
+                    <div class="filter-title"><h4>FILTER</h4></div>
+                    <div class="filter-kinds">
+                        <div class="filter-name"><h5>KINDS</h5><h5 class="btn-expand-collapse" id="btn-expand-default">+</h5></div>
+                        <ul class="filter-kinds-box filter-hide">
+                            <li class="selected"><a href="#">Basic Tee</a></li>
+                            <li><a href="#">Cuban Shirt</a></li>
+                            <li><a href="#">Flannel Shirt</a></li>
+                            <li><a href="#">Jamal Koko Shirt</a></li>
+                            <li><a href="#">Oxford</a></li>
+                        </ul>
                     </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="filter-size">
+                        <div class="filter-name"><h5>SIZE</h5><h5 class="btn-expand-collapse">+</h5></div>
+                        <ul class="filter-flex filter-hide">
+                            <li class="filter-flex-item selected"><a href="#">S</a></li>
+                            <li class="filter-flex-item"><a href="#">M</a></li>
+                            <li class="filter-flex-item"><a href="#">L</a></li>
+                            <li class="filter-flex-item"><a href="#">XL</a></li>
+                            <li class="filter-flex-item"><a href="#">XXL</a></li>
+                            <li class="filter-flex-item"><a href="#">40</a></li>
+                            <li class="filter-flex-item not-available"><a href="#">41</a></li>
+                            <li class="filter-flex-item"><a href="#">42</a></li>
+                            <li class="filter-flex-item"><a href="#">43</a></li>
+                            <li class="filter-flex-item"><a href="#">44</a></li>
+                        </ul>
                     </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="filter-color">
+                        <div class="filter-name"><h5>COLOR</h5><h5 class="btn-expand-collapse">+</h5></div>
+                        <ul class="filter-flex filter-kinds-hide filter-hide">
+                            <li class="filter-flex-item"><a class="c1" href=""><span class="color-palette"></span></a></li>
+                            <li class="filter-flex-item selected"><a class="c2" href=""><span class="color-palette"></span></a></li>
+                            <li class="filter-flex-item"><a class="c3" href=""><span class="color-palette"></span></a></li>
+                            <li class="filter-flex-item"><a class="c4" href=""><span class="color-palette"></span></a></li>
+                            <li class="filter-flex-item"><a class="c5" href=""><span class="color-palette"></span></a></li>
+                            <li class="filter-flex-item"><a class="c6" href=""><span class="color-palette"></span></a></li>
+                            <li class="filter-flex-item"><a class="c7" href=""><span class="color-palette"></span></a></li>
+                            <li class="filter-flex-item"><a class="c8" href=""><span class="color-palette"></span></a></li>
+                        </ul>
                     </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-item-container">
-                        <div class="box-item-bigger">
-                            <a class="box-bigger-img">
-                                <!-- <div class="img-template"></div> -->
-                                <div class="badge-left">Best Seller</div>
-                                <img class="img-template" src="img/sample_image2.jpg" alt="">
-                                <div class="love-right">
-                                    <span class="material-icons">
-                                    favorite
-                                    </span>
-                                </div>
-                            </a>
-                            <div class="box-bigger-titlebox">
-                                <h5>Kinds</h5>
-                                <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
-                            </div>
-                            <div class="box-bigger-pricebox">
-                                <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
-                                <h4>Rp 20.000</h4>
-                                <div class="star">
-                                    <span class="fa fa-star-o checked"></span>
-                                    <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
-                                    <span class="fa fa-star checked"></span> -->
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                    <span class="fa fa-star-o checked"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
-           
-            </div>
+                
+                <div class="items-box">
+                
+                    <div class="items-container" id="">
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item-container">
+                            <div class="box-item-bigger">
+                                <a class="box-bigger-img">
+                                    <!-- <div class="img-template"></div> -->
+                                    <div class="badge-left">Best Seller</div>
+                                    <img class="img-template" src="img/sample_image2.jpg" alt="">
+                                    <div class="love-right">
+                                        <span class="material-icons">
+                                        favorite
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="box-bigger-titlebox">
+                                    <h5>Kinds</h5>
+                                    <a href="#"><h4> Lorem ipsum dolor sit amet consectetur.</h4></a>
+                                </div>
+                                <div class="box-bigger-pricebox">
+                                    <div class="original-price"><span class="discount-box">-00%</span><h5>Rp 120.000</h5></div>
+                                    <h4>Rp 20.000</h4>
+                                    <div class="star">
+                                        <span class="fa fa-star-o checked"></span>
+                                        <!-- <span class="fa fa-star-half-o star-half-one" aria-hidden="true"></span>
+                                        <span class="fa fa-star checked"></span> -->
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                        <span class="fa fa-star-o checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            
+                </div>
+
+            </div>
+            <div class="filter-button-container">
+                <button class="filter-button">
+                    FILTER
+                </button>
+            </div>
         </div>
 
         <div class="breaker"></div>
@@ -679,16 +1116,6 @@
         <div class="copyright">
             <p>Copyright © <strong>PT Coba coba</strong></p>
         </div>
-
-    </div>
-
-    <div class="filter-button-container">
-        <button class="filter-button">
-            FILTER
-        </button>
-    </div>
-
-    <div class="filter-right">
 
     </div>
 

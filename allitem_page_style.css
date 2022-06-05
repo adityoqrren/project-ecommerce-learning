@@ -1,42 +1,92 @@
-/* .container{
-    background-color: yellow;
-} */
+.container{
+    /* background-color: yellow; */
+    position: relative;
+}
+
+body{
+    overflow-x: hidden;
+}
 
 .content{
-    /* background-color: blue; */
+    /* background-color: blue;
     display: grid;
     grid-template-areas: "title-empty title-items"
     "filter-left items-box";
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr; */
     position: relative;
 }
 
 /* Nyoba nambahin disini */
 /* Nyoba nambahin lageee */
 
+.content-top{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px;
+}
+
+.content-bottom{
+    /* display: grid;
+    grid-template-columns: 1fr 4fr; */
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
 .title-empty{
-    grid-area: title-empty;
+    /* grid-area: title-empty; */
+    background-color: crimson;
 }
 
 .title-items{
-    grid-area: title-items;
-    margin-bottom: 24px;
+    /* grid-area: title-items; */
+    /* margin-bottom: 24px; */
+    background-color: chartreuse;
     text-align: center;
 }
 
 .items-box{
-    grid-area: items-box;
+    /* grid-area: items-box; */
+    background-color: darkmagenta;
+    flex-grow: 4;
+    width: 80%;
 }
 
 /* FILTER LEFT */
 
 .filter-left{
-    grid-area: filter-left;
+    /* grid-area: filter-left; */
+    flex-grow: 1;
+    width: 20%;
+    /* background-color: gold; */
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 12px;
-    /* position: fixed; */
+    position: sticky;
+    top: 175px;
+    height: fit-content;
+}
+
+.filter-name{
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.btn-expand-collapse{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.filter-kinds-box.filter-hide{
+    display: none;
+}
+
+.filter-flex.filter-hide{
+    display: none;
 }
 
 .filter-flex{
@@ -85,17 +135,6 @@
 
 /* FILTER-LEFT FILTER-SIZE */
 
-/* .filter-size .filter-flex .filter-flex-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    width: 35px;
-    border: 0.5px solid black;
-    box-shadow: none;
-    font-size: 0.8em;
-} */
-
 .filter-size .filter-flex .filter-flex-item a:hover{
     background-color: black;
     color: #fff;
@@ -113,11 +152,6 @@
     border: 0.5px solid black;
     font-size: 0.8em;
 }
-
-/* .filter-size .filter-flex .filter-flex-item a:hover{
-    text-align: center;
-    color: #fff;
-} */
 
 .filter-size .filter-flex .filter-flex-item.selected a{
     background-color: black;
@@ -279,6 +313,15 @@
     cursor: pointer;
 }
 
+/* Filter button */
+.filter-button-container{
+    display: none;
+}
+
+.filter-right{
+    display: none;
+}
+
 
 /* Responsive Breakpoints */
 
@@ -310,42 +353,57 @@
         display: none;
     }
 
-    .content{
-        grid-template-areas: 'title-items' 'items-box';
-        grid-template-columns: 1fr;
+    .content-top{
+      grid-template-columns: 1fr;
     }
+
+    /* .items-box{
+        width: 100%;
+        flex-grow: 1;
+    } */
 
     .box-bigger-img{
         height: 250px;
     }
 
     .filter-right{
+        position: absolute;
         z-index: 100;
-        position:absolute;
         top: 0;
         bottom: 0;
         right: 0;
         background-color: blue;
-        height: 100vh;
+        /* height: 100vh; */
         width: 50%;
         display: block;
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
         overflow-y: auto;
-        text-align: right;
+        text-align: left;
+        padding: 12px 12px;
     }
 
-    .filter-right .slide{
+    .filter-right.slide{
         transform: translateX(0);
         opacity: 1;
         position: fixed;
     }
 
+    .filter-right .filter-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filter-right .filter-title .filter-close{
+        cursor: pointer;
+    }
+
     .filter-button-container{
-        position: fixed;
+        position: sticky;
         bottom:0;
-        height: 7%;
+        height: 40px;
         left: 0;
         right: 0;
         background-color: aqua;
@@ -355,6 +413,7 @@
     .filter-button-container button{
         width: 100%;
         border: 0;
+        background-color: #fff;
         color: #666;
     }
 
