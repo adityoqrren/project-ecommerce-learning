@@ -43,16 +43,19 @@ allButtonsOpen.forEach(buttonOpen => {
 })
 
 // open default left filter
-document.getElementById("btn-expand-default").click();
+document.querySelector(".btn-expand-collapse.btn-expand-default").click();
 
 // slide filter right (filter for minimize or mobile)
 const filterRightButton = document.querySelector(".filter-button");
 const filterRight = document.querySelector(".filter-right");
+const overlayBlock = document.querySelector(".overlay-block");
 filterRightButton.addEventListener('click',function(){
     filterRight.classList.toggle('slide');
+    overlayBlock.classList.toggle('active');
 });
 
 const filterClose = document.querySelector(".filter-close");
 filterClose.addEventListener('click',function(){
     filterRight.classList.remove('slide');
+    overlayBlock.classList.remove('active');
 });
