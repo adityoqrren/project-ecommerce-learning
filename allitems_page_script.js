@@ -25,19 +25,19 @@
 
 // Left Filter Open-Close
 
-allButtonsOpen = document.querySelectorAll('.btn-expand-collapse');
+const allButtonsOpen = document.querySelectorAll('.btn-expand-collapse');
 // allListFilter = document.querySelectorAll('.filter-left ul');
 
 allButtonsOpen.forEach(buttonOpen => {
-    buttonOpen.addEventListener('click', function handleClick(event){
-        if(event.target.textContent=="+"){
-            event.target.textContent = "-";
+    buttonOpen.addEventListener('click', function handleClick(){
+        if(this.textContent=="+"){
+            this.textContent = "-";
         }else{
-            event.target.textContent = "+";
+            this.textContent = "+";
         }
-        parentThisNode = event.target.parentElement.parentElement;
+        const parentThisNode = this.parentElement.parentElement;
         console.log(parentThisNode);
-        listThisNode = parentThisNode.querySelector("ul");
+        const listThisNode = parentThisNode.querySelector("ul");
         listThisNode.classList.toggle('filter-hide');
     });
 })

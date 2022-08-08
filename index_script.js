@@ -1,4 +1,4 @@
-var slideIndex = 1;
+let slideIndex = 1;
 showSlide(slideIndex);
 
 function nextSlide(n){
@@ -6,7 +6,7 @@ function nextSlide(n){
 }
 
 function showSlide(n){
-    var slides = document.getElementsByClassName("imgslide");
+    const slides = document.getElementsByClassName("imgslide");
     
     if(n > slides.length){
         slideIndex = 1;
@@ -22,7 +22,7 @@ function showSlide(n){
     slides[slideIndex - 1].style.display = "block";
 }
 
-var slider = tns({
+const slider = tns({
     container: "#slide-cover-1",
     slideBy: "page",
     loop: false,
@@ -34,23 +34,22 @@ var slider = tns({
     nav:false,
     responsive: {
         992: {
-            items: 4
+            items: 5
         },
         768: {
-            items: 3
+            items: 4
         },
         576: {
-            items: 2
+            items: 3,
         },
         0: {
             items: 2,
-            mouseDrag: true,
-            gutter: 8
+            mouseDrag: true
         }
     }
 });
 
-var slider2 = tns({
+const slider2 = tns({
     container: "#slide-cover-2",
     slideBy: "page",
     loop: false,
@@ -62,18 +61,17 @@ var slider2 = tns({
     nav:false,
     responsive: {
         992: {
-            items: 4
+            items: 5
         },
         768: {
-            items: 3
+            items: 4
         },
         576: {
-            items: 2
+            items: 3,
         },
         0: {
             items: 2,
-            mouseDrag: true,
-            gutter: 8
+            mouseDrag: true
         }
     }
 });
@@ -81,11 +79,11 @@ var slider2 = tns({
 
 // Tab JS
 
-tabButtons = document.querySelectorAll('.tab-button');
-tabContents = document.querySelectorAll('.tab-contents-box');
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-contents-box');
 
 tabButtons.forEach(tabButton => {
-    tabButton.addEventListener('click', function handleClick(event){
+    tabButton.addEventListener('click', function handleClick(){
        
         for (i=0; i<tabContents.length; i++){
              //kita sembunyikan semua tab-contents-box
@@ -94,9 +92,9 @@ tabButtons.forEach(tabButton => {
             tabButtons[i].classList.remove('active');  
         }
         //kita tambahin kelas active di button yang sekarang terklik
-        event.target.classList.add('active');
+        this.classList.add('active');
         //kita tampilkan tab-content sesuai yang diminta 
-        data = event.target.dataset.content;
+        const data = this.dataset.content;
         contentToOpen = document.querySelector('#tab-box-'+data);
         contentToOpen.classList.add("active");
     });

@@ -9,6 +9,10 @@ body{
     font-size: 16px ;
 }
 
+ol{
+    list-style-position: inside;
+}
+
 /* Navigation */
 
 nav{
@@ -191,6 +195,11 @@ nav .nav-up.on-scroll-padding-nav{
 
 .brand{
     font-size: 2.5em;
+}
+
+.brand a{
+    color: black;
+    text-decoration: none;
 }
 
 .basket .badge{
@@ -392,7 +401,7 @@ nav .nav-up.on-scroll-padding-nav{
     margin-bottom: 40px;
 }
 
-.desc-item{
+.store-desc .desc-item{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 10px;
@@ -414,8 +423,10 @@ nav .nav-up.on-scroll-padding-nav{
 
 .box-1-img{
     position: relative;
-    height: 250px;
-    width: 170px;
+    /* height: 250px;
+    width: 170px; */
+    height: 100%;
+    width: 100%;
     display: inline-block;
     border-radius: 10px;
     overflow: hidden;
@@ -458,7 +469,8 @@ nav .nav-up.on-scroll-padding-nav{
 }
 .box-1-pricebox{
     border-top: 1px solid #666;
-    width: 170px;
+    /* width: 170px; */
+    width: 100%;
 }
 
 .original-price{
@@ -485,6 +497,7 @@ nav .nav-up.on-scroll-padding-nav{
     width: 170px;
 } */
 
+
 .box-item a{
     text-decoration: none;
     cursor: pointer;
@@ -503,7 +516,8 @@ nav .nav-up.on-scroll-padding-nav{
 }
 
 .box-1-titlebox{
-    width: 170px;
+    /* width: 170px; */
+    width: 100%;
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -522,8 +536,8 @@ nav .nav-up.on-scroll-padding-nav{
     /* scroll-behavior: smooth; */
     /* -ms-overflow-style: none;
     scrollbar-width: none; */
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
 }
 
 .slide-cover::-webkit-scrollbar{
@@ -723,9 +737,19 @@ nav .nav-up.on-scroll-padding-nav{
 }
 
 .tab-contents-box.active{
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 16px;
+}
+
+/* .tab-contents-box .box-item{
+    width: 170px;
+} */
+
+.tab-contents-box .box-1-img{
+    height: auto;
+    width: 100%;
 }
 
 .tab-more{
@@ -866,6 +890,10 @@ footer ul li a{
 
 /* Tablet */
 @media screen and (max-width:768px) {
+    .content{
+        max-width: 540px;
+    }
+
     .imgslide img{
         height: 700px;
     }
@@ -889,6 +917,9 @@ footer ul li a{
 
 /* Mobile */
 @media screen and (max-width:600px) {
+    .content{
+        margin: 0 12px;
+    }
 
     .slide-box-1 .slide-cover{
         margin: 0;
@@ -1040,6 +1071,10 @@ footer ul li a{
 
     .box-service{
         grid-template-columns: 1fr;
+    }
+
+    .box-1-img, .box-1-titlebox, .box-1-pricebox{
+        /* width: 140px; */
     }
 
     .tab-contents-box.active{

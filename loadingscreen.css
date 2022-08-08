@@ -6,7 +6,7 @@ body.loaded{
     overflow: auto;
 }
 
-.wrapper{
+.loader-wrapper{
     background-color: rgb(251, 182, 182);
     height: 100%;
     width: 100%;
@@ -22,12 +22,12 @@ body.loaded{
     align-items: center;
 }
 
-.wrapper h2{
+.loader-wrapper h2{
     font-size: 3em;
     margin-bottom: 5rem;
 }
 
-.wrapper h3{
+.loader-wrapper h3{
     margin-bottom: 2rem;
 }
 
@@ -42,7 +42,7 @@ body.loaded{
     animation: 1.5s spin infinite ease-in-out;
 }
 
-.loaded .wrapper{
+.loaded .loader-wrapper{
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;

@@ -15,6 +15,7 @@ body{
     z-index: 100;
     position: fixed;
     opacity: 0;
+    transition: all 0.5s;
 }
 
 .content{
@@ -437,6 +438,11 @@ body{
 
     .filter-right .filter-kinds-box li a{
         border-bottom: 1px solid #fff;
+    }
+
+    .filter-size .filter-flex .filter-flex-item.not-available a{
+        border: 1px solid #fff;
+        color: #fff;
     }
 
     .filter-button-container{
